@@ -26,11 +26,11 @@
   boolean isInEditMode() return false;
 }
 
--keepclassmembers class **.R$* {
-    public static <fields>;
-}
+#-keepclassmembers class **.R$* {
+#    public static <fields>;
+#}
 
--keepattributes Signature,InnerClasses,EnclosingMethod,*Annotation*
+-keepattributes Signature,InnerClasses,EnclosingMethod,RuntimeVisible*Annotation,AnnotationDefault
 
 # Retrofit
 # This is to keep parameters on retrofit2.http-annotated methods while still allowing removal of unused ones
@@ -49,7 +49,7 @@
 -dontwarn com.uber.javaxextras.**
 
 # Some unsafe classfactory stuff
--keep class sun.misc.Unsafe { *; }
+# -keep class sun.misc.Unsafe { *; }
 
 # CheckerFramework/EP
 -dontwarn org.checkerframework.**

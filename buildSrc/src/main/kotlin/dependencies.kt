@@ -165,6 +165,10 @@ object deps {
       const val perf = "com.google.firebase:firebase-perf:18.0.0"
     }
 
+    object support {
+      const val annotations = "com.android.support:support-annotations:26.0.1"
+    }
+
     const val gradlePlugin = "com.android.tools.build:gradle:${SharedBuildVersions.agp}"
   }
 

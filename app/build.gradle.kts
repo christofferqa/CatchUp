@@ -394,6 +394,7 @@ dependencies {
   implementation(deps.android.androidx.preferenceKtx)
   implementation(deps.android.androidx.viewPager2)
   implementation(deps.android.androidx.swipeRefresh)
+  implementation(deps.android.support.annotations)
 
   // Arch components
   implementation(deps.android.androidx.lifecycle.extensions)
